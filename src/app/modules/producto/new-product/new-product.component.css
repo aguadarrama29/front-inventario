@@ -1,0 +1,23 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-container > * {
+    width: 100%;
+}
+
+/*no usar el estilo default del inpitfile*/
+.input-file{
+    display: none;
+}
+
+
+/*no usar el estilo default del inpitfile*/
+.subir{
+    padding: 5px 16px;
+    background: #3f51b5;
+    color: #fff;
+    border: 0px solid #fff;
+}

@@ -1,0 +1,49 @@
+ /* solo afectan a componente al q pertenece*/ 
+ .dashboard-container{
+    display: flex;   /* se desplegan de forma flexible segun la pantalla*/ 
+    flex-direction: column;/* sa de forma vertical de arriba haia abajo se reposicionen*/ 
+    position: absolute; /* los elementos q interactuen los salte y tome esat configuracion*/
+    top: 0;     /* los margenes sean de 0 en cada posicion*/ 
+    bottom: 0;
+    left: 0;
+    right: 0;  
+}
+
+/*toolbar se mantenga en la psoicion de arriba aun usando scroll*/
+.is-mobile .dashboard-toolbar{
+    position: fixed;
+    z-index: 2;
+}
+
+/*nombre de la clase css que voy a nombrar*/
+h1.app-name{
+    margin-left: 8px;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+.profile-card{
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.header{
+    margin-top: 20px;
+}
+
+/*para mostrar la barra de la izq en el template en desktop*/
+.sidenav-container{
+    flex: 1;
+}
+/*para mostrar la barra de la izq en el template en mobile*/
+.is-mobile .sidenav-container{
+    flex: 1 0 auto;
+}
+
+/*separar el icono del texto*/
+.icono{
+    margin-right: 10px;
+}
