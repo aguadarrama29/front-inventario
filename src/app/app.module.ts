@@ -15,8 +15,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
     keycloak.init({
       config: {
-        url: 'http://localhost:8080/auth',
-        realm: 'imss_ldapv2',//inventario
+        url: 'https://ssoinventory-my-proyecto.apps-crc.testing/auth', //antes http://localhost:8080/auth
+        realm: 'inventario',//imss_ldapv2
         clientId: 'angular-client-inventario'
       },
       initOptions: {
