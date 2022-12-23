@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   //es la url que comparten todos los metodos
   base_url:"https://inventory-my-proyecto.apps-crc.testing/api/v1"
 };
